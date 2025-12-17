@@ -3,25 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFILE</title>
+    <title>Custonmer's Form</title>
 </head>
-<body>
-   <header>
-    <h1> SAVINGS ACCOUNT OPENING FORM</h1>
-    <img src=""
+<body style="margin-left:20px; margin-right: 20px;">
+  <header>
+   <div style="display: flex;">
+    <div style=" width: 80%; height: 45px; color: rgb(243, 243, 243); border: 1px solid rgba(224, 233, 233, 0.333); 
+    background-color: rgba(150, 150, 149, 0.966); display: grid; margin-left: 10px; margin-right: 100px;">
+      <h3> SAVINGS ACCOUNT OPENING FORM</h3>
+    </div>
+    <img src="logo.png" style=" display: grid; width: 90px; margin-right:20px; height: 70px;">
    </header>
-  <section>
-    <h2>
-        General Details
-    </h2>
-    <ol>
-        <li>Enter your full name: 
-        <input type="text">
-        </li>
-        <li> Enter your address: 
-        <input type="text ">
-        </li>
-    </ol>
-  </section>
+   <!--<img src="logo.png" style=" object-fit:cover; width: 90px; min-content; 
+    text-align: right;  margin-right:  10px; height: 70px;">-->
+  </div><br>
+  <form name="Cust.Info" action="" method="post"
+  style="display: contents; align-items: normal; gap: ; text-align: justify; padding: 80px; margin-left: 50px; margin-right: 50px;">
+    <div>
+     <!--<input id="fullname" type="text">-->
+     <p>Complete the form and fill in your details <b>carefully</b></p>
+     <input placeholder="Name" id="fullname" type="text" style=" width:90%;"><br>
+      <span style="margin-left: 80px;"><b>Surname</b><span style="margin-left: 200px;">
+        <b>First Name</b></span> <span style="margin-left: 200px;"><b>Other Names</b></span></span></label><br>
+     <!--<input id="addy" type="text">-->
+     <input placeholder="Residential Address:" id="addy" type="text" style="width: 90%;"></label><br><br>
+     <!--<input id="mail" type="text">-->
+     <input placeholder="Mailing Address:" id="maddy" type="text" style="width: 90%"></label><br><br>
+     <!--<input id="contact" type="text">-->
+     <input placeholder="Tel Nos:" id="contact1" type="text" style="width: 90%;"></label><br>
+     <span style="margin-left: 100px";><b>(Mobile)</b></b></span><span style="margin-left: 200px;">
+      <b>(Office/Fax)</b> </span><span style="margin-left: 250px;"><b>(Home)</b> <br><br>
+     <!--<input id="dob" type="text">--></div>
+     <label>Date of Birth: <input id="dob" type="month"></label><label style="margin-left: 150px;"> <input placeholder="Email:" id="email" type="text" style="width: 46.5%;"></label><br><br>
+     <input placeholder="Occupation/Profession:" id="job" type="text" style="width: 40%;"> <label><span style="margin-left: 10px;">
+     <input placeholder="Nationality:" id="country" type="text" style="width:47.5% ;"></span></label><br><br>
+     <input placeholder="Employer's Name & Address:" id="boss_info" type="text" style="width: 90%;"></label><br><br>
+     <label><input style="width: 90%;" type="text"></label><br><br>
+     <input placeholder="Name of Spouse & Address:" id="spouse_-info" type="text" style="width: 90%;"></b></label><br><br>
+     <p> I hereby request and authorize you to open a savings account in my name.</p>
+     I certify that the above particulars are true and correct.<br>
+     <u>I agree</u>
+    </div>
+    <div style="text-align: justify; margin-right: 80px;">
+      <ol>
+        <li>To guard against access to my withdrawal slip by unauthorized persons.</li>
+        <li>That interest will be allowed on my savings account at ruling rates and subject to prevailing conditions.</li>
+        <li>That all sums for the credit of my account should be accompanied by a pay-in-slip showing the name and number of the accoount to be credited.
+          The entry of the tracsaction will be verified by the initial of an officer of the Guaranty Trust Bank (Nigeria) Ltd on the duplicate of the pay-in-slip.</li>
+        <li>That withdrawals can only be made by me at the branch in which  my account is domiciled and on the basis of withdrawal slips</li>
+        <li>That any change in my address book should be at once communicated to Guaranty Trust Bank (Nigeria) Ltd at the branch where the my account was opened.</li>
+        <li>That a quarter Statement of Account will be sent to me, discrepancies observed on my Statement of Account shall be notified to 
+          Guaranty Trust Bank (Nigeria) Ltd within 15 days of the date thereof, Guaranty Trust Bank (Nigeria) Ltd shall assume that the entries made are correct,
+           having failed to recieve any notice of information to the contrary within the stipulated period.</li>
+      </ol>
+      <label><input id="sign1" type="text" style="width: 30%;  margin-left: 120px;"></label> <span> <label><input id="date1" type="text" style=" width: 30%; margin-left: 150px;"></label>
+        <p style="margin-left: 200px;">Signature <span style="margin-left:370px;"> Date</span></p><br><hr>
+    </div>
+    <div>
+      <h3><b>FOR OFFICIAL USE ONLY</b></h3><br>
+      <p>Scanned By: <span><input id="off1" style="width: 30%; margin-left: 82px ;"></span><span><input style="width: 30%; margin-left: 95px;"></span></p>
+      <span style="margin-left: 250px;"> <b>CIS Officer</b> </span><span style="margin-left: 280px;"><b>Signature & Date</b></span></p>
+      <p>Authorised By: <span><input id="off2" style="width: 30%; margin-left: 65px;"></span><span><input style="width: 30%; margin-left: 95px;"></span></p>
+       <p style="margin-left: 250px;"> <b> Head - CIS</b> <span style="margin-left: 280px;"><b>Signature & Date</b></span></p>
+      <p>Account Created By: <span><input id="off3" style="width: 30%; margin-left: 30px;"></span><span><input style="width: 30%; margin-left: 95px;"></span></p>
+      <p style="margin-left: 250px;"> <b>CIS Officer</b> <span style="margin-left: 280px;"><b>Signature & Date</b></span></p>
+      <label style="margin-left: 50px;"> 1 Completed Signature Card. <input id=card1 type="checkbox"></label> <span style="margin-left: 90px;"></span><span>1 Passport Photograph <input id=card2 type="checkbox"></span>
+      <span style="margin-left: 120px;"> Idenitfication <input id=card3 type="checkbox"></span>
+      <div style="align-items: center; text-align: center;">
+        <p style="margin-left: 390px;">Account No:</p><br>
+        <input style= "margin-left:350px; box-sizing: border-box; width: 25px;">
+        <input style="box-sizing: border-box; width: 25px;">
+      </div>
+    </div>
+  </form>
 </body>
 </html>
